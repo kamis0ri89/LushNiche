@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My LushNiche Page</title>
+    <title>LushNiche</title>
     <style>
         body {
             background-color: black;
-            color: white;
+            color: rgb(0, 0, 0);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
             text-align: center;
-            flex-direction: column;
+        }
+        .container {
+            position: relative;
+            display: inline-block;
         }
         img {
             max-width: 100%;
             height: auto;
         }
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 6em;
+            line-height: 1.5; /* Adjusts spacing between lines */
+            white-space: nowrap; /* Prevents text wrapping */
+        }
     </style>
 </head>
 <body>
-    <img src="Logo" alt="LushNiche Logo">
-    <h1>Welcome to Our Website!</h1>
+    <div class="container">
+        <img src="Logo" alt="LushNiche Logo">
+        <div class="text-overlay">
+            Welcome to Our Website!<br>Site under construction
+        </div>
+    </div>
 </body>
 </html>
